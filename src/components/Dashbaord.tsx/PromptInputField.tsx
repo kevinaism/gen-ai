@@ -52,7 +52,7 @@ export const PromptInputField = ({
           <Tooltip title="Please Select Recommended Prompt" placement="top">
             <HelpOutlineIcon
               fontSize="large"
-              sx={{ ml: 1, color: blueGrey[900] }}
+              sx={{ ml: 1, color: yellow[800] }}
             />
           </Tooltip>
         )}
@@ -74,6 +74,7 @@ export const PromptInputField = ({
           onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
             setPromptValue(event.target.value);
           }}
+          disabled={presetIndex === ""}
         />
         <Tooltip title="Clear Prompt" placement="top">
           <span>
@@ -98,6 +99,7 @@ export const PromptInputField = ({
           sx={{ p: "10px" }}
           aria-label="search"
           onClick={() => setIsLoading(true)}
+          disabled={presetIndex === ""}
           loading={isLoading}
         >
           <SearchIcon />

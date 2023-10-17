@@ -71,7 +71,7 @@ export default function Dashboard() {
               <Alert severity="warning" sx={{ pb: 0 }}>
                 <AlertTitle>
                   <strong>
-                  Please Select Recommended Prompt, Update Your Prompt, and then Click Search Button
+                  Please Select Recommended Prompt, and then Update Your Prompt
                   </strong>
                 </AlertTitle>
               </Alert>
