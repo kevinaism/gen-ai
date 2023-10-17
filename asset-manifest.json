@@ -1,23 +1,17 @@
 {
   "files": {
     "main.css": "/gen-ai/static/css/main.02a32a90.css",
-    "main.js": "/gen-ai/static/js/main.6de96028.js",
+    "main.js": "/gen-ai/static/js/main.e02cbc71.js",
     "static/js/787.312fa3be.chunk.js": "/gen-ai/static/js/787.312fa3be.chunk.js",
-    "static/media/1.png": "/gen-ai/static/media/1.99439986d5c29f38808e.png",
-    "static/media/2.png": "/gen-ai/static/media/2.472fc5aaf1458d657467.png",
-    "static/media/3.png": "/gen-ai/static/media/3.cd197f310dd5f1323cab.png",
-    "static/media/5.png": "/gen-ai/static/media/5.d31ec267d528833b6f98.png",
-    "static/media/6.png": "/gen-ai/static/media/6.5145c7f5fb0a8e7d7b04.png",
-    "static/media/modal_image.jpg": "/gen-ai/static/media/modal_image.d941feeee85cc575b18d.jpg",
-    "static/media/4.png": "/gen-ai/static/media/4.f203c114ae9570769e3f.png",
-    "static/media/dbs_logo.svg": "/gen-ai/static/media/dbs_logo.64e0ff39e3dc8b457eb2f7f44cdf27cb.svg",
+    "static/media/guide.png": "/gen-ai/static/media/guide.79b21f8b48c2457810c9.png",
+    "static/media/modal_image.jpg": "/gen-ai/static/media/modal_image.9b53a8a8af4b47073d25.jpg",
     "index.html": "/gen-ai/index.html",
     "main.02a32a90.css.map": "/gen-ai/static/css/main.02a32a90.css.map",
-    "main.6de96028.js.map": "/gen-ai/static/js/main.6de96028.js.map",
+    "main.e02cbc71.js.map": "/gen-ai/static/js/main.e02cbc71.js.map",
     "787.312fa3be.chunk.js.map": "/gen-ai/static/js/787.312fa3be.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02a32a90.css",
-    "static/js/main.6de96028.js"
+    "static/js/main.e02cbc71.js"
   ]
 }
