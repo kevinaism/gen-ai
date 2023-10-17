@@ -14,7 +14,7 @@ code {
 
 .image-gallery-slide img {
   width: 100%;
-  height: calc(100vh - 300px);
+  height: calc(100vh - 400px);
 }
 
 .fullscreen .image-gallery-slide img {

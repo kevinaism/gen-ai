@@ -16,6 +16,7 @@ import { RecommedPromptCard } from "../../components/Dashbaord.tsx/RecommedPromp
 export default function Dashboard() {
   const [promptValue, setPromptValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [presetIndex, setPresetIndex] = useState("");
 
   const toastId = React.useRef<Id | null | undefined>(null);
 
@@ -64,19 +65,48 @@ export default function Dashboard() {
   return (
     <>
       <Grid container spacing={3}>
-        <Grid item xs={isDestopMode ? 9 : 12}>
+        <Grid item xs={12}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <Alert severity="warning" sx={{ pb: 0 }}>
                 <AlertTitle>
                   <strong>
-                    Please Input Your Prompt, and then Click Search Button
+                  Please Select Recommended Prompt, Update Your Prompt, and then Click Search Button
                   </strong>
                 </AlertTitle>
               </Alert>
             </Grid>
+            <Grid item xs={isDestopMode ? 4 : 12}>
+              <RecommedPromptCard
+                presetIndex="1"
+                promptValue={promptValue}
+                setPromptValue={setPromptValue}
+                setPresetIndex={setPresetIndex}
+                promptText="Portrait of an old fisherman at sea, using natural light to highlight weathered textures."
+              />
+            </Grid>
+            <Grid item xs={isDestopMode ? 4 : 12}>
+              <RecommedPromptCard
+                presetIndex="2"
+                promptValue={promptValue}
+                setPromptValue={setPromptValue}
+                setPresetIndex={setPresetIndex}
+                promptText="Portrait of a professional dancer expressing emotion through movement, with dramatic lighting."
+              />
+            </Grid>
+            <Grid item xs={isDestopMode ? 4 : 12}>
+              <RecommedPromptCard
+                presetIndex="3"
+                promptValue={promptValue}
+                setPromptValue={setPromptValue}
+                setPresetIndex={setPresetIndex}
+                promptText="Joyful portrait of someone laughing in the rain, using high shutter speed to freeze raindrops."
+              />
+            </Grid>
             <Grid item xs={12}>
               <PromptInputField
+                setPresetIndex={setPresetIndex}
+                presetIndex={presetIndex}
                 promptValue={promptValue}
                 setPromptValue={setPromptValue}
                 isLoading={isLoading}
@@ -99,7 +129,7 @@ export default function Dashboard() {
                   <Grid container spacing={1}>
                     <Grid item xs={12}>
                       <Skeleton
-                        sx={{ height: 400 }}
+                        sx={{ height: 500 }}
                         animation="wave"
                         variant="rectangular"
                       />
@@ -107,80 +137,48 @@ export default function Dashboard() {
                     <Grid item xs={2}>
                       <Skeleton
                         animation="wave"
-                        height={120}
+                        height={150}
                         variant="rectangular"
                       />
                     </Grid>
                     <Grid item xs={2}>
                       <Skeleton
                         animation="wave"
-                        height={120}
+                        height={150}
                         variant="rectangular"
                       />
                     </Grid>
                     <Grid item xs={2}>
                       <Skeleton
                         animation="wave"
-                        height={120}
+                        height={150}
                         variant="rectangular"
                       />
                     </Grid>
                     <Grid item xs={2}>
                       <Skeleton
                         animation="wave"
-                        height={120}
+                        height={150}
                         variant="rectangular"
                       />
                     </Grid>
                     <Grid item xs={2}>
                       <Skeleton
                         animation="wave"
-                        height={120}
+                        height={150}
                         variant="rectangular"
                       />
                     </Grid>
                     <Grid item xs={2}>
                       <Skeleton
                         animation="wave"
-                        height={120}
+                        height={150}
                         variant="rectangular"
                       />
                     </Grid>
                   </Grid>
                 </>
               )}
-            </Grid>
-          </Grid>
-        </Grid>
-        <Grid item xs={isDestopMode ? 3 : 12}>
-          <Grid container spacing={2}>
-            <Grid item xs={12}>
-              <RecommedPromptCard
-                promptValue={promptValue}
-                setPromptValue={setPromptValue}
-                promptText="Portrait of an old fisherman at sea, using natural light to highlight weathered textures."
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <RecommedPromptCard
-                promptValue={promptValue}
-                setPromptValue={setPromptValue}
-                promptText="Portrait of a professional dancer expressing emotion through movement, with dramatic lighting."
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <RecommedPromptCard
-                promptValue={promptValue}
-                setPromptValue={setPromptValue}
-                promptText="Joyful portrait of someone laughing in the rain, using high shutter speed to freeze raindrops."
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <RecommedPromptCard
-                promptValue={promptValue}
-                setPromptValue={setPromptValue}
-                promptText="Joyful portrait of someone laughing in the rain, using high shutter speed to freeze raindrops."
-              />
             </Grid>
           </Grid>
         </Grid>

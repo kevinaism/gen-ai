@@ -39,18 +39,18 @@ export const AiModalCard = () => {
     <Card>
       <CardMedia
         component="img"
-        height="240"
+        height="350"
         image={modalImage}
         alt="Paella dish"
       />
-      <CardContent>
-        <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
+      <CardContent sx={{ pb: 0 }}>
+        <Typography variant="body1" color="text.secondary" sx={{ mb: 1 }}>
           Convert User Story to UI mock-up at ease by using Gen-AI Modal,
           accelerating production development and elevation the UI customer
           journey by rapid UI experimentation.
         </Typography>
         <Chip
-          label="XXX Original"
+          label="DBS Original"
           color="secondary"
           size="small"
           sx={{ mr: 1, mb: 1 }}
@@ -63,12 +63,6 @@ export const AiModalCard = () => {
         />
       </CardContent>
       <CardActions disableSpacing>
-        {/* <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton> */}
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}

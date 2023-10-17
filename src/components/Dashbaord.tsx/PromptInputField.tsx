@@ -1,6 +1,11 @@
+import LooksOneIcon from "@mui/icons-material/LooksOne";
+import LooksTwoIcon from "@mui/icons-material/LooksTwo";
+import Looks3Icon from "@mui/icons-material/Looks3";
+import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import SearchIcon from "@mui/icons-material/Search";
 import ClearIcon from "@mui/icons-material/Clear";
 import {
+  Badge,
   Divider,
   IconButton,
   InputBase,
@@ -10,12 +15,15 @@ import {
   useTheme,
 } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
+import { blueGrey, yellow } from "@mui/material/colors";
 
 interface PromptInputFieldProps {
   promptValue: string;
   setPromptValue: React.Dispatch<React.SetStateAction<string>>;
   isLoading: boolean;
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  presetIndex: string;
+  setPresetIndex: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export const PromptInputField = ({
@@ -23,6 +31,8 @@ export const PromptInputField = ({
   setPromptValue,
   isLoading,
   setIsLoading,
+  presetIndex,
+  setPresetIndex,
 }: PromptInputFieldProps) => {
   const theme = useTheme();
 
@@ -38,6 +48,23 @@ export const PromptInputField = ({
           alignItems: "center",
         }}
       >
+        {presetIndex === "" && (
+          <Tooltip title="Please Select Recommended Prompt" placement="top">
+            <HelpOutlineIcon
+              fontSize="large"
+              sx={{ ml: 1, color: blueGrey[900] }}
+            />
+          </Tooltip>
+        )}
+        {presetIndex === "1" && (
+          <LooksOneIcon fontSize="large" sx={{ ml: 1, color: blueGrey[900] }} />
+        )}
+        {presetIndex === "2" && (
+          <LooksTwoIcon fontSize="large" sx={{ ml: 1, color: blueGrey[900] }} />
+        )}
+        {presetIndex === "3" && (
+          <Looks3Icon fontSize="large" sx={{ ml: 1, color: blueGrey[900] }} />
+        )}
         <InputBase
           sx={{ ml: 1, flex: 1 }}
           multiline
@@ -56,6 +83,7 @@ export const PromptInputField = ({
               aria-label="clear"
               onClick={() => {
                 setPromptValue("");
+                setPresetIndex("");
                 setIsLoading(false);
               }}
             >
