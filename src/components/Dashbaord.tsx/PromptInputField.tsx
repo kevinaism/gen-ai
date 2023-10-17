@@ -49,7 +49,11 @@ export const PromptInputField = ({
         }}
       >
         {presetIndex === "" && (
-          <Tooltip title="Please Select Recommended Prompt" placement="top">
+          <Tooltip
+            title="Please Select Recommended Prompt"
+            placement="top"
+            enterTouchDelay={0}
+          >
             <HelpOutlineIcon
               fontSize="large"
               sx={{ ml: 1, color: yellow[800] }}
