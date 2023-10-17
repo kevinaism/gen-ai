@@ -32,7 +32,7 @@ export default function MainMenu(props: MainMenuProps) {
             color="inherit"
             sx={{ flexGrow: 1 }}
           >
-            DBS Hong Kong - Generative AI
+            Hello Hong Kong - Generative AI
           </Typography>
         </Toolbar>
       </AppBar>

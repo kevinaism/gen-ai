@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import modalImage from "../../images/modal_image.jpg";
+import modalImage from "../../images/image.jpeg";
 import { Chip } from "@mui/material";
 
 interface ExpandMoreProps extends IconButtonProps {

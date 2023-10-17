@@ -1,5 +1,5 @@
 import { styled } from "@mui/material";
-import logo from "../../images/dbs_logo.svg";
+import logo from "../../images/logo192.png";
 
 interface LogoProps {
   size: number;
