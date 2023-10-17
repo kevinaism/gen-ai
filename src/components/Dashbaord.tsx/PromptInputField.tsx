@@ -4,6 +4,7 @@ import Looks3Icon from "@mui/icons-material/Looks3";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import SearchIcon from "@mui/icons-material/Search";
 import ClearIcon from "@mui/icons-material/Clear";
+import SendIcon from "@mui/icons-material/Send";
 import {
   Badge,
   Divider,
@@ -99,14 +100,13 @@ export const PromptInputField = ({
 
         <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
         <LoadingButton
-          color="primary"
           sx={{ p: "10px" }}
           aria-label="search"
           onClick={() => setIsLoading(true)}
           disabled={presetIndex === ""}
           loading={isLoading}
         >
-          <SearchIcon />
+          <SendIcon />
         </LoadingButton>
       </Paper>
     </>
