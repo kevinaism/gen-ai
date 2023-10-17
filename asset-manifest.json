@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gen-ai/static/css/main.185cba7c.css",
-    "main.js": "/gen-ai/static/js/main.9da2e2e9.js",
+    "main.css": "/gen-ai/static/css/main.02a32a90.css",
+    "main.js": "/gen-ai/static/js/main.bb7fd04b.js",
     "static/js/787.312fa3be.chunk.js": "/gen-ai/static/js/787.312fa3be.chunk.js",
     "static/media/4.png": "/gen-ai/static/media/4.7afcc619e424cc0903ca.png",
     "static/media/5.png": "/gen-ai/static/media/5.479c6e1a3dfc490a93e3.png",
@@ -11,12 +11,12 @@
     "static/media/2.png": "/gen-ai/static/media/2.07dcf0339614ff6fad61.png",
     "static/media/image.jpeg": "/gen-ai/static/media/image.9b53a8a8af4b47073d25.jpeg",
     "index.html": "/gen-ai/index.html",
-    "main.185cba7c.css.map": "/gen-ai/static/css/main.185cba7c.css.map",
-    "main.9da2e2e9.js.map": "/gen-ai/static/js/main.9da2e2e9.js.map",
+    "main.02a32a90.css.map": "/gen-ai/static/css/main.02a32a90.css.map",
+    "main.bb7fd04b.js.map": "/gen-ai/static/js/main.bb7fd04b.js.map",
     "787.312fa3be.chunk.js.map": "/gen-ai/static/js/787.312fa3be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.185cba7c.css",
-    "static/js/main.9da2e2e9.js"
+    "static/css/main.02a32a90.css",
+    "static/js/main.bb7fd04b.js"
   ]
 }
