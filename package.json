@@ -1,7 +1,6 @@
 {
   "name": "generative-ai-ui",
   "version": "0.1.0",
-  "homepage": "https://arlunga.github.io/gen-ai",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
