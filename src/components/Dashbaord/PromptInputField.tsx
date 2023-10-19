@@ -103,7 +103,7 @@ export const PromptInputField = ({
     notifyLoading();
     axios
       .post<GenerateRequestPayload, AxiosResponse<GenerateResponsePayload>>(
-        "http://13.212.253.138:8000/generate",
+        "http://172.31.44.173:8000/generate",
         {
           preset: preset,
           user_input: userInput,
