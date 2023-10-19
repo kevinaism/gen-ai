@@ -169,7 +169,7 @@ export const PromptInputField = ({
           sx={{ ml: 1, flex: 1 }}
           multiline
           minRows={2}
-          maxRows={6}
+          maxRows={10}
           value={promptValue}
           onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
             setPromptValue(event.target.value);
