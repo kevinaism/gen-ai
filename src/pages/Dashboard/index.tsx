@@ -6,8 +6,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import React from "react";
-import { useEffect, useState } from "react";
-import { Flip, Id, toast, Zoom } from "react-toastify";
+import { useState } from "react";
 import { AiModalCard } from "../../components/Dashbaord/AiModalCard";
 import { ImageGalleryViewer } from "../../components/Dashbaord/ImageGalleryViewer";
 import { PromptInputField } from "../../components/Dashbaord/PromptInputField";

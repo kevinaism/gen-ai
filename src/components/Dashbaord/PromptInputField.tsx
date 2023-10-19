@@ -2,23 +2,20 @@ import LooksOneIcon from "@mui/icons-material/LooksOne";
 import LooksTwoIcon from "@mui/icons-material/LooksTwo";
 import Looks3Icon from "@mui/icons-material/Looks3";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
-import SearchIcon from "@mui/icons-material/Search";
 import ClearIcon from "@mui/icons-material/Clear";
 import SendIcon from "@mui/icons-material/Send";
 import {
-  Badge,
   Divider,
   IconButton,
   InputBase,
   Paper,
   Tooltip,
   useMediaQuery,
-  useTheme,
 } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
 import { blueGrey, yellow } from "@mui/material/colors";
 import axios, { AxiosResponse } from "axios";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Flip, Id, toast, Zoom } from "react-toastify";
 
 interface PromptInputFieldProps {
@@ -50,8 +47,6 @@ export const PromptInputField = ({
   setPresetIndex,
   setGeneratedImages,
 }: PromptInputFieldProps) => {
-  const theme = useTheme();
-
   const isDestopMode = useMediaQuery("(min-width:600px)");
 
   const toastId = React.useRef<Id | null | undefined>(null);
@@ -101,13 +96,12 @@ export const PromptInputField = ({
         transition: Flip,
       });
   };
-  const dismissAll = () => toast.dismiss();
 
   const generateRequest = (preset: string, userInput: string) => {
     setIsLoading(true);
     setGeneratedImages([]);
     notifyLoading();
-    const response = axios
+    axios
       .post<GenerateRequestPayload, AxiosResponse<GenerateResponsePayload>>(
         "http://13.212.253.138:8000/generate",
         {
