@@ -1,12 +1,6 @@
 import { useMediaQuery } from "@mui/material";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import image_1 from "../../images/1.png";
-import image_2 from "../../images/2.png";
-import image_3 from "../../images/3.png";
-import image_4 from "../../images/4.png";
-import image_5 from "../../images/5.png";
-import image_6 from "../../images/6.png";
 import guide from "../../images/guide.png";
 
 const images = [
